@@ -8,7 +8,8 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-  background-color: bisque;
+    background-color: black;
+    color: white;
 }
 .page-header ul{
     display: flex;
@@ -17,7 +18,8 @@ body{
     list-style: none;
 }
 .page-header a{
-  display: block;
-  padding:0.5em;
-  text-decoration:none;
+    display: block;
+    padding:0.5em;
+    text-decoration:none;
+    color: white;
 }

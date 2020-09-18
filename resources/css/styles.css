@@ -23,3 +23,25 @@ body{
     text-decoration:none;
     color: white;
 }
+.items {
+    display: grid;
+    grid-template-columns: repeat(4, 120px);
+    grid-column-gap: 200px;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+.item {
+    display: flex;
+    flex-direction: column;
+    border: solid 1px;
+    width: 300px;
+    margin-top: 30px;
+    justify-content: ;
+    align-items: center;
+}
+button{
+    background-color: cornflowerblue;
+    color: white;
+    border: none;
+    padding: .5em;
+}

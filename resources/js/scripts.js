@@ -21,11 +21,19 @@ for (let i=0; i<data.length; ++i) {
     let button = document.createElement('button')
     button.id = data[i].name
   
-    // creates a custom attribute called data-price.
-    // That will hold the price for each element in the button
+
     button.dataset.price = data[i].price
     button.innerHTML = "Add to Cart"
     newDiv.appendChild(button)
-    // put new div inside items container
+
     itemsContainer.appendChild(newDiv)
   }
+//shopping cart
+const cart=[]
+function addItem(name, price){
+  const item={name:name,price:price,qty:1}
+  cart.push(item)
+}
+function showItems(){
+  console.log(`You have ${cart.length} items in your cart`)
+}

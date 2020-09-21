@@ -61,3 +61,14 @@ function getTotal(){
   }
   return total.toFixed(2)
 }
+function removeItem(name, qty=1){
+  for(leti=0;i<cart.length;i++){
+    if(cart[i].name===name){
+      cart[i].qty-=qty
+      if(cart[i].qty<=0){
+        cart.splice(i,1)
+      }
+      return
+    }
+  }
+}
